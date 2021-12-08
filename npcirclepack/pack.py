@@ -1,7 +1,7 @@
 import numpy as np
 
-from enclose import encloseFrontChain
-from node import Node
+from npcirclepack.enclose import encloseFrontChain
+from npcirclepack.node import Node
 
 def place(pos, b, a, c):
     #distance squared between a and b
@@ -49,13 +49,6 @@ def score(a):
     return dx*dx + dy*dy        
 
 def pack_enclose(pos):
-    if len(pos.shape)!=2:
-        raise Exception("Expected a 2D numpy array.")
-    if pos.shape[1]!=3:
-        raise Exception("Expected a 2D numpy array with a second dimension of 3.")
-    if pos.dtype!=np.float32 and pos.dtype!=np.float64:
-        raise Exception("Expected a 2D numpy array with data type of float32 or float64.")
-
     #place the first circle
     pos[0][0] = 0 #x0=0
     pos[0][1] = 0 #y0=0

@@ -1,7 +1,7 @@
 import math
 import random
 
-from node import Node
+from npcirclepack.node import Node
 
 def extend(arr, p):
     #find the set of circles (1, 2, or 3) whose enclosure encloses all the circles in arr and p
@@ -27,10 +27,7 @@ def extend(arr, p):
                     return [arr[i], arr[j], p]
     
     #we shouldn't get here
-    #TODO: raise error
-    print("Oh gawd")
-    # breakpoint()
-    exit(-1)
+    raise Exception("Error in npcirclepack.enclose. This should not happen!")
 
 def enclosesNot(a, b):
     dr = a.r - b.r
