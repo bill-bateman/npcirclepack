@@ -1,5 +1,4 @@
 import pytest
-# from npcirclepack import pack_enclose
 
 import numpy as np
 from npcirclepack import pack_enclose
