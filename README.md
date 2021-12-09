@@ -13,3 +13,9 @@ The circle pack code is adapted from [d3-hierarchy](https://github.com/d3/d3-hie
 # Why?
 
 I was doing some circle-packing visualizations with in the order of 1 million total leaf nodes. Performing the layout in the front-end each time was not only wasteful, but taking too long. I didn't find a Python equivalent that met my needs, so I made this. The output of x, y, and r ar ein a numpy array so it's easier to output as a binary dump. This library could be faster, but it is enough for my purposes.
+
+# Installation
+
+Install through `pip`. E.g. `python3 -m pip install npcirclepack`.
+
+Note: if you are getting errors, try installing `numpy` first, then `npcirclepack`.
