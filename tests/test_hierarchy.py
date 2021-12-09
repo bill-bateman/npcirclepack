@@ -13,7 +13,6 @@ def test_basic():
     pack_enclose_hierarchy(root)
     assert 'r' in root
     assert root['r']==1
-    # breakpoint()
     #check radii of children were properly scaled
     assert root['pos'][0][2]==pytest.approx(0.2)
     assert root['pos'][1][2]==pytest.approx(0.4)
@@ -22,7 +21,7 @@ def test_basic():
 def test_nested():
     root = {
         'children': [
-            {'r': 1, 'children': [{'r':1,'r':2}]},
+            {'r': 1, 'children': [{'r':1},{'r':2}]},
             {'r': 2},
             {'r': 3},
         ]
