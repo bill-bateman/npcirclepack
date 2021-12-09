@@ -1,1 +1,4 @@
 __pycache__
+dist/
+npcirclepack.egg-info/
+.pytest_cache/
