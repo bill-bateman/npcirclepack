@@ -13,7 +13,7 @@ def pack_enclose(pos):
 
     Returns
     -------
-    
+    float
         Radius of enclosing circle. The center of the enclosing circle is assumed to be (0,0).
 
     """
