@@ -33,7 +33,7 @@ def pack_enclose_hierarchy(hierarchy, padding=0):
     - `pos` to a numpy array containing the float32 values for x, y, r of its children.
     
     Note that the function scales the circles such that the final enclosing circle has a radius of 1.
-    i.e. to fit within a 1x1 viewing pane.
+    i.e. to fit within a 2x2 viewing pane (x and y are [-1,1]).
     
     Each node within the passed hierarchy should have the following fields:
         - children: array of nodes
