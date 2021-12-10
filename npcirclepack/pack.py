@@ -130,6 +130,7 @@ def pack_enclose(pos):
 
             #compute new closest circle pair to centroid
             aa = score(a)
+            c = c.next
             while c != b:
                 ca = score(c)
                 if ca<aa:
